@@ -1,0 +1,36 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre nosotros
+        .row.mb-5 
+            .col-md-6
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur sequi dolores quisquam error placeat eos fugit expedita facere nihil odit ipsam minus ipsa, voluptates rerum. Nesciunt eius accusantium dolore itaque. 
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde magni eligendi fuga rerum quod explicabo incidunt, voluptas nisi aperiam alias placeat accusamus, exercitationem sapiente eius, amet quis assumenda at?
+
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros" class="img-fluid")
+        include ./layout/bloques_viajes
+
+    .descuento 
+        .container
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de descuento 
+                        p.titulo Viaje a Canda 
+                        p.fecha 28 de marzo de 2023
+                        p.precio $2,500 USD
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales  
+         
+
+        
+                            
+            
